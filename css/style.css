@@ -1,0 +1,650 @@
+@-webkit-keyframes line1 {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes line1 {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+@-webkit-keyframes line3 {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes line3 {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes line1r {
+  0% {
+    transform: translateY(0) rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes line1r {
+  0% {
+    transform: translateY(0) rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@-webkit-keyframes line3r {
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@keyframes line3r {
+  0% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+@-webkit-keyframes openNav {
+  0% {
+    display: none;
+    top: 30%;
+  }
+  50% {
+    display: flex;
+  }
+  100% {
+    display: flex;
+    top: 100%;
+  }
+}
+@keyframes openNav {
+  0% {
+    display: none;
+    top: 30%;
+  }
+  50% {
+    display: flex;
+  }
+  100% {
+    display: flex;
+    top: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input::-moz-placeholder, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea::-moz-placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input::-moz-placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea::-moz-placeholder {
+    color: #85adbc !important;
+  }
+  #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input:-ms-input-placeholder, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea:-ms-input-placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input:-ms-input-placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea:-ms-input-placeholder {
+    color: #85adbc !important;
+  }
+  #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input::placeholder, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea::placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input::placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea::placeholder {
+    color: #85adbc !important;
+  }
+  #offers .carousel {
+    max-width: 100%;
+  }
+  #offers .carousel .carousel-inner {
+    height: 50dvh !important;
+  }
+  #offers .carousel .carousel-inner .carousel-item img {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+  #products .container {
+    max-width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  #products .container #categories {
+    width: 100% !important;
+    margin: 15px;
+  }
+  #products .container #categories h4 {
+    margin-block: 10px;
+  }
+  #products .container #categories #cat-items {
+    margin-block: 5px;
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+  #products .container #products-card {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 620px) {
+  header {
+    justify-content: space-between;
+    position: relative;
+  }
+  header .brand {
+    width: 50%;
+  }
+  header label[for=menu] {
+    width: 25px;
+    height: 10px;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+  }
+  header label[for=menu] div {
+    width: 25px;
+    height: 2px;
+    background: #eddee2;
+    border-radius: 2px;
+    position: absolute;
+    transition: 0.3s opacity linear 0.2s;
+  }
+  header label[for=menu] div:first-of-type {
+    -webkit-animation: line1r 0.65s cubic-bezier(0.68, 0.01, 0.13, 0.16) both;
+            animation: line1r 0.65s cubic-bezier(0.68, 0.01, 0.13, 0.16) both;
+  }
+  header label[for=menu] div:last-of-type {
+    -webkit-animation: line3r 0.65s cubic-bezier(0.68, 0.01, 0.13, 0.16) both;
+            animation: line3r 0.65s cubic-bezier(0.68, 0.01, 0.13, 0.16) both;
+  }
+  header input[type=checkbox] {
+    visibility: hidden;
+  }
+  header input[type=checkbox]:checked + label div:first-of-type {
+    -webkit-animation: line1 0.65s cubic-bezier(1, 0.82, 0.165, 1) both;
+            animation: line1 0.65s cubic-bezier(1, 0.82, 0.165, 1) both;
+  }
+  header input[type=checkbox]:checked + label div:nth-of-type(2) {
+    opacity: 0;
+  }
+  header input[type=checkbox]:checked + label div:last-of-type {
+    -webkit-animation: line3 0.65s cubic-bezier(1, 0.82, 0.165, 1) both;
+            animation: line3 0.65s cubic-bezier(1, 0.82, 0.165, 1) both;
+  }
+  header input[type=checkbox]:checked + label ~ nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    -webkit-animation: openNav 0.5s linear both;
+            animation: openNav 0.5s linear both;
+  }
+  header #search {
+    width: 100%;
+  }
+  header #search input {
+    width: 100%;
+  }
+  header nav {
+    display: none;
+    margin: auto;
+    width: 100%;
+    transition: all 0.3s linear;
+  }
+  header nav .menu-items {
+    justify-content: center;
+    background-color: rgba(164, 110, 91, 0.75);
+  }
+  header nav .menu-items li {
+    margin: 10px;
+  }
+}
+@font-face {
+  font-family: "Ruda";
+  src: url(../font/Ruda-VariableFont_wght.ttf);
+  font-family: "Aladin";
+  src: url(../font/Aladin-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Aladin", cursive;
+  background: #ebf4f2;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Ruda", sans-serif;
+}
+body ol, body ul, body dl {
+  margin: initial;
+  padding: initial;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+  color: #a46e5b;
+}
+
+.link {
+  position: relative;
+}
+.link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #eddee2;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.2s linear;
+}
+.link:hover::after, .link:focus::after {
+  width: 100%;
+}
+
+header {
+  background-color: rgba(164, 110, 91, 0.75);
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  font-size: 1.45em;
+  padding: 20px 50px;
+  z-index: 9;
+  transition: all 0.3s linear;
+}
+header .brandName .name {
+  color: #85adbc;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 14px;
+  position: relative;
+  background: transparent;
+  transition: 0.5s linear;
+}
+header .brandName .name::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 2px;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  box-sizing: border-box;
+}
+header .brandName .name::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  box-sizing: border-box;
+}
+header .brandName .name:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+header .brandName .name:hover::before {
+  border-color: #85adbc;
+  height: 100%;
+  transition: 0.3s width linear, 0.3s height linear 0.4s;
+  width: 100%;
+}
+header .brandName .name:hover::after {
+  border-color: #85adbc;
+  height: 100%;
+  transition: 0.3s width linear, 0.3s height linear 0.4s;
+  width: 100%;
+}
+header #menu {
+  display: none;
+}
+header input {
+  font-family: "Aladin", cursive;
+  height: 32px;
+  padding: 0 1rem;
+  border: transparent;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+header input:focus, header input:hover {
+  outline: none;
+  border-color: rgba(234, 76, 137, 0.4);
+  box-shadow: 0 0 0 4px rgba(234, 76, 137, 0.1);
+}
+header nav {
+  order: 3;
+}
+header nav .menu-items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.3s linear;
+}
+header nav .menu-items .link {
+  color: #eddee2;
+  margin-inline: 10px;
+  flex: 1 1 100%;
+}
+
+#accForm, #contact {
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+#accForm .modal-dialog, #contact .modal-dialog {
+  justify-content: center;
+  transform: initial;
+}
+#accForm .modal-dialog .modal-content, #contact .modal-dialog .modal-content {
+  overflow: hidden;
+  max-width: 390px;
+  background-color: rgba(235, 244, 242, 0.3);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+#accForm .modal-dialog .modal-content .modal-header, #contact .modal-dialog .modal-content .modal-header {
+  margin: 5px;
+}
+#accForm .modal-dialog .modal-content .modal-body, #contact .modal-dialog .modal-content .modal-body {
+  overflow: hidden;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+#accForm .modal-dialog .modal-content .modal-body .title-text, #contact .modal-dialog .modal-content .modal-body .title-text {
+  display: flex;
+  width: 200%;
+}
+#accForm .modal-dialog .modal-content .modal-body .title, #contact .modal-dialog .modal-content .modal-body .title {
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container, #contact .modal-dialog .modal-content .modal-body .form-container {
+  width: 100%;
+  overflow: hidden;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls .slide, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls .slide {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls label.signup, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls label.signup {
+  color: #000;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls .slider-tab, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls .slider-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 15px;
+  background: #a46e5b;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls input[type=radio], #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls input[type=radio] {
+  display: none;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ .slider-tab, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ .slider-tab, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ .slider-tab, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ .slider-tab {
+  left: 50%;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ label.signup, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ label .social, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ label.signup, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ label .social, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ label.signup, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ label .social, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ label.signup, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ label .social {
+  color: #fff;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ label.login, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ label .email, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ label.login, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ label .email, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ label.login, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #signup:checked ~ label .email, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ label.login, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #social:checked ~ label .email {
+  color: #000;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #login:checked ~ label.signup, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #login:checked ~ label .social, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #email:checked ~ label.signup, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #email:checked ~ label .social, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #login:checked ~ label.signup, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #login:checked ~ label .social, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #email:checked ~ label.signup, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #email:checked ~ label .social {
+  color: #000;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #login:checked ~ label.login, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #login:checked ~ label .email, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #email:checked ~ label.login, #accForm .modal-dialog .modal-content .modal-body .form-container .slide-controls #email:checked ~ label .email, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #login:checked ~ label.login, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #login:checked ~ label .email, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #email:checked ~ label.login, #contact .modal-dialog .modal-content .modal-body .form-container .slide-controls #email:checked ~ label .email {
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner {
+  display: flex;
+  width: 200%;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form {
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input:focus, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea:focus, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input:focus, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea:focus {
+  border-color: #a46e5b;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input::-moz-placeholder, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea::-moz-placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input::-moz-placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea::-moz-placeholder {
+  color: #09100f;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input:-ms-input-placeholder, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea:-ms-input-placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input:-ms-input-placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea:-ms-input-placeholder {
+  color: #09100f;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input::placeholder, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea::placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field input::placeholder, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .field textarea::placeholder {
+  color: #09100f;
+  transition: all 0.3s ease;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .pass-link a, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .signup-link a, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .pass-link a, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .signup-link a {
+  text-decoration: none;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .pass-link a:hover, #accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .signup-link a:hover, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .pass-link a:hover, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .signup-link a:hover {
+  text-decoration: underline;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .pass-link, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .pass-link {
+  margin-top: 5px;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .signup-link, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .signup-link {
+  text-align: center;
+  margin-top: 30px;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .bttn, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .bttn {
+  height: 50px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .bttn .btn-layer, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .bttn .btn-layer {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: #a46e5b;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .bttn:hover .btn-layer, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .bttn:hover .btn-layer {
+  left: 0;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner form .bttn input[type=submit], #contact .modal-dialog .modal-content .modal-body .form-container .form-inner form .bttn input[type=submit] {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner .social, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner .social {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#accForm .modal-dialog .modal-content .modal-body .form-container .form-inner .social a, #contact .modal-dialog .modal-content .modal-body .form-container .form-inner .social a {
+  color: #09100f;
+  font-size: 1.8em;
+  width: 25%;
+  text-align: center;
+}
+
+main section {
+  margin-bottom: 30px;
+}
+main #offers .carousel .carousel-inner {
+  height: 70dvh;
+}
+main #offers .carousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+main #offers .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #offers .carousel .carousel-inner .carousel-item .carousel-caption {
+  padding: 10px;
+  background-color: rgba(9, 16, 15, 0.4);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+main #offers .carousel .carousel-indicators {
+  margin-bottom: initial;
+}
+main #products .container {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+}
+main #products .container #categories {
+  width: 20%;
+  padding: 15px;
+  margin-right: 15px;
+  border-radius: 12px;
+  background-color: rgba(133, 173, 188, 0.6);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+main #products .container #categories h4 {
+  text-align: center;
+}
+main #products .container #categories #cat-items {
+  display: flex;
+  flex-direction: column;
+}
+main #products .container #categories #cat-items input[type=checkbox] {
+  margin-right: 8px;
+}
+main #products .container #products-card {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main #products .container #products-card .card {
+  width: 250px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgba(9, 16, 15, 0.2);
+}
+main #products .container #products-card .card img {
+  width: 100%;
+  aspect-ratio: 4/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+  mix-blend-mode: darken;
+}
+main #products .container #products-card .card .prod-links {
+  display: flex;
+  justify-content: space-around;
+}
+main #products .container #products-card .card .prod-links .link::after {
+  background-color: #a46e5b;
+}/*# sourceMappingURL=style.css.map */
